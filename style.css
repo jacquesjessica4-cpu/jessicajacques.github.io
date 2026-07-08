@@ -167,17 +167,6 @@ textarea:focus-visible{
   font-size: 0.5em;
   color: var(--text-soft);
 }
-.typed-name::after{
-  content: "";
-  display: inline-block;
-  width: 0.5ch;
-  height: 1em;
-  background: var(--amber);
-  margin-left: 4px;
-  animation: blink 1s step-end infinite;
-  vertical-align: -0.1em;
-}
-@keyframes blink{ 50%{ opacity: 0; } }
 .hero-sub{
   max-width: 55ch;
   color: var(--text-soft);
