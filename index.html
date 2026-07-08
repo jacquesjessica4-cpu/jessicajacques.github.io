@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica Jacques - Portfolio Dév. Web</title>
+<meta name="description" content="Portfolio personnel de Jessica Jacques, développeuse web débutante : projets, compétences et contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#accueil" class="logo">JJ<span class="logo-dot">_</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#accueil" class="nav-link">Accueil</a>
+      <a href="#apropos" class="nav-link">À propos</a>
+      <a href="#competences" class="nav-link">Compétences</a>
+      <a href="#projets" class="nav-link">Projets</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section id="accueil" class="section hero">
+  <div class="hero-margin" aria-hidden="true"></div>
+  <div class="hero-content hero-content--with-photo">
+    <div class="hero-text">
+      <p class="eyebrow">Portfolio Dév. Web</p>
+      <h1 class="hero-title">
+        <span class="terminal-line">Présentation</span>
+        <span class="typed-name" id="typedName" aria-label="Jessica Jacques">Jessica Jacques</span>
+      </h1>
+      <p class="hero-sub">Développeuse web en devenir, j'apprends à construire des interfaces claires, accessibles et légères - une ligne de code à la fois.</p>
+      <div class="hero-actions">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="profil.jpg" alt="Photo de profil" class="hero-photo">
+    </div>
+  </div>
+</section>
+
+  <!-- ===== A PROPOS ===== -->
+  <section id="apropos" class="section apropos">
+    <div class="hero-margin" aria-hidden="true"></div>
+    <div class="section-content">
+      <span class="tab-label">À propos</span>
+      <h2 class="section-title">Une débutante sérieuse, pas timide</h2>
+      <div class="apropos-grid">
+        <div class="apropos-text">
+          <p>Je m'appelle <strong>Jessica Jacques</strong>. Après plusieurs années dans la planification de projets communautaires en tant que psychologue, j'ai décidé d'apprendre le développement web pour construire mes propres outils plutôt que d'attendre qu'on me les construise.</p>
+          <p>Je documente chaque projet comme un carnet de laboratoire : ce que j'ai essayé, ce qui a cassé, ce que j'ai corrigé. Cette rigueur, je l'applique aussi à l'accessibilité et à la sobriété numérique, parcequ'un site utile n'a pas besoin d'être lourd.</p>
+          <a href="cv-jessica-Jacques.pdf" class="btn btn-outline" download>Télécharger mon CV</a>
+        </div>
+        <div class="apropos-card" role="note" aria-label="Fiche d'identité">
+          <ul class="fact-list">
+            <li><span>Basé à</span> Port-au-Prince, Haïti</li>
+            <li><span>Formation</span> Développement Web - DCLIC/OIF</li>
+            <li><span>Langues</span> Français, Créole haïtien</li>
+            <li><span>Objectif</span> Construire des sites sobres et accessibles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPÉTENCES ===== -->
+  <section id="compétences" class="section compétences">
+    <div class="hero-margin" aria-hidden="true"></div>
+    <div class="section-content">
+      <span class="tab-label">Compétences</span>
+      <h2 class="section-title">Ce que je sais déjà utiliser</h2>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h3>Front-end</h3>
+          <ul class="skill-bars">
+            <li><span class="skill-name">HTML sémantique</span><span class="bar"><i style="--v:85%"></i></span></li>
+            <li><span class="skill-name">CSS3 (Flex / Grid)</span><span class="bar"><i style="--v:75%"></i></span></li>
+            <li><span class="skill-name">JavaScript (bases)</span><span class="bar"><i style="--v:60%"></i></span></li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Méthode</h3>
+          <ul class="skill-bars">
+            <li><span class="skill-name">Design responsive</span><span class="bar"><i style="--v:70%"></i></span></li>
+            <li><span class="skill-name">Accessibilité (a11y)</span><span class="bar"><i style="--v:65%"></i></span></li>
+            <li><span class="skill-name">Git &amp; GitHub</span><span class="bar"><i style="--v:55%"></i></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETS ===== -->
+  <section id="projets" class="section projets">
+    <div class="hero-margin" aria-hidden="true"></div>
+    <div class="section-content">
+      <span class="tab-label">Projets</span>
+      <h2 class="section-title">Trois carnets, trois expérimentations</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-index">Carnet 01</div>
+          <h3>Gestionnaire de tâches</h3>
+          <p>Liste de tâches interactive : ajout, suppression et sauvegarde de l'état en JavaScript pur, sans dépendance externe.</p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <a href="#" class="project-link">Voir le code →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-index">Carnet 02</div>
+          <h3>Vitrine « Kafe Lakay »</h3>
+          <p>Page vitrine pour un café fictif : menu, section À propos et carte de localisation, entièrement responsive.</p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS Grid</li><li>Responsive</li>
+          </ul>
+          <a href="#" class="project-link">Voir le code →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-index">Carnet 03</div>
+          <h3>Générateur de citations</h3>
+          <p>Petit outil qui affiche une citation aléatoire à chaque clic, avec animation d'apparition et gestion des erreurs.</p>
+          <ul class="tag-list">
+            <li>JavaScript</li><li>DOM</li><li>a11y</li>
+          </ul>
+          <a href="#" class="project-link">Voir le code →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="hero-margin" aria-hidden="true"></div>
+    <div class="section-content">
+      <span class="tab-label">Contact</span>
+      <h2 class="section-title">Un projet en tête ? Écrivez-moi.</h2>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required aria-describedby="nomError">
+            <span class="error-msg" id="nomError" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-describedby="emailError">
+            <span class="error-msg" id="emailError" role="alert"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="messageError"></textarea>
+          <span class="error-msg" id="messageError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+        <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2026 Jessica Jacques - Portfolio réalisé dans le cadre du cours Développement Web, niveau intermédiaire.</p>
+    <a href="#accueil" class="back-top">Revenir en haut ↑</a>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
